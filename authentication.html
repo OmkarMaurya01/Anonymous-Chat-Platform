@@ -1,0 +1,306 @@
+<!-- 
+<label for="">Passward</label>
+<input type="text" id="'input-name" >
+<button onclick="check()">Submit</button>
+
+<script>
+
+function check() {
+    
+    let passward = document.querySelector('input').value
+    
+    var xhttp = new XMLHttpRequest();
+
+    xhttp.open("POST", "Authentication", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send(passward);
+
+}
+
+</script>
+   -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        /* html {
+            height: 100%;
+        } */
+
+        .big-container {
+            background-color: #1a1a1a;
+
+            width: 100vw;
+            height: 100vh;
+            /* height: 100vh; */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            overflow: hidden;
+            /* backdrop-filter: blur(50px); */
+
+            /* filter: blur(2px); */
+
+            /* position: relative; */
+
+        }
+
+        .big-container::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(15px);
+
+        }
+        .big-container img{
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+
+        .container {
+            position: absolute;
+            border-radius: 1.5em;
+            /* background-color: transparent; */
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+
+            /* margin-top: 50%; */
+            font-size: 16px;
+            width: 40em;
+            height: 25em;
+            transform: translateY(-50%) translateX(-50%);
+            /* border-radius: 8px; */
+            /* background-color: rgb(62, 62, 62 ,0); */
+            background-color: rgba(140, 140, 140, 0.1);
+            backdrop-filter: blur(150px);
+
+            /* border: green solid 2px; */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .Heading-container {
+            width: 100%;
+            height: 23%;
+            /* border-radius: ; */
+            /* border: red solid 2px; */
+
+        }
+
+        .text {
+            font-size: 2em;
+            /* border: red solid 2px ; */
+            height: 72%;
+            padding: .5em .5em;
+            font-family: sans-serif;
+            text-transform: capitalize;
+            color: #bcbaba;
+            /* font-style: italic; */
+        }
+
+        h5 {
+            color: #989898;
+            font-size: 1em;
+            height: 30%;
+            text-transform: capitalize;
+            font-family: 'roboto';
+            font-weight: 100;
+            padding-left: 1em;
+
+        }
+
+        .sub-container {
+            /* border: rgb(60, 60, 60) solid 3px; */
+            /* border-top: rgb(60, 60, 60) solid 3px; */
+            border-top: rgb(188, 186, 186, 0.2) solid 2px;
+            height: 75%;
+            width: 100%;
+            /* border: blue solid 2px; */
+            position: relative;
+        }
+
+        .sub-container h2 {
+
+
+            /* border: 2px red solid ; */
+            width: 100%;
+            margin: 9% 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 1.7em;
+            font-weight: 100;
+            font-family: 'roboto';
+            color: #bcbaba;
+
+
+        }
+
+        .sub-container fieldset {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 20%;
+            border-radius: 1.5em;
+            /* background-color:#bcbaba ;  */
+
+
+
+        }
+
+        legend {
+            margin-left: 1em;
+            padding: 0 .2em;
+            font-family: 'roboto';
+            color: #bcbaba;
+            font-size: .9em;
+            /* color: black; */
+        }
+
+        .sub-container input {
+
+
+            width: 100%;
+            height: 110%;
+            position: absolute;
+            /* top:0; */
+            background-color: transparent;
+            /* margin:5px 0px; */
+
+            /* /* position: absolute; */
+            /* top: 40%;
+            left: 50%; */
+            transform: translateY(-15%);
+            border-radius: 1.5em;
+
+
+            /* border: rgb(43, 42, 42) solid 1px; */
+            border: none;
+            padding: 0 1em;
+            outline: none;
+            font-size: 1em;
+            color: #ababab;
+
+
+        }
+
+        p {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2em;
+            font-family: 'roboto';
+            text-transform: capitalize;
+            color: rgb(229, 56, 56);
+        }
+
+
+
+        button{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 15%;
+            height: 12%;
+            cursor: pointer;
+            margin: 1em;
+            border-radius: 1em;
+
+            /* color: rgb(153, 153, 153); */
+            background-color: rgb(218, 215, 215);
+            /* transition: .5s; */
+
+        }
+
+        button:hover {
+            /* color: rgb(153, 6, 6); */
+            background-color: white;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                font-size: 20px;
+
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="big-container">
+       <img src="images.jpeg" alt="">
+        <div class="container">
+             <div class="Heading-container">
+                <div class="text">DarkRoom</div>
+                <h5>Note: Ask your key to server admin</h5>
+            </div>
+            <div class="sub-container">
+
+                <h2>Authentication Key Required</h2>
+                <fieldset>
+                    <legend>Key</legend>
+                    <input type="password" id="password" name="password" placeholder="Eg:dwQ2@3fnd">
+
+                </fieldset>
+                <p></p>
+                
+                <button onclick="Check()"><span>Check</span></button>
+            </div>
+
+
+
+        </div> 
+    </div>
+
+</body>
+<script>
+
+
+
+    const checkPassward = async (passwardText) => {
+        const response = await fetch('replace_Link_Here', { method: "POST", body: `POST Passward => @layer ${passwardText} @layer`, })
+        const descision = await response.json();
+        if (descision == "Key Matched") {
+            let p = document.querySelector('p')
+            p.innerHTML = descision
+            p.style.color = 'green'
+            location.reload();
+        }
+        else { document.querySelector('p').innerHTML = descision }
+    }
+    function Check() {
+
+        let passwardText = document.querySelector("input").value
+        console.log(passwardText);
+        document.querySelector("input").value = ""
+        checkPassward(passwardText);
+
+
+    }
+
+</script>
+
+</html>

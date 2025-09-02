@@ -1,0 +1,125 @@
+<!-- <form action="Message" method="GET">
+  <label for="input-name">Type: </label>
+  <input type="text" id="input-name" name="Message">
+  <br>
+  <input type="submit" value="Send">
+</form> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatting Web Interface - Darkroom </title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <h1>Hello World</h1>
+
+
+
+ 
+  <input type="text" />
+  <button onclick="sendMsg()">Send</button>
+ 
+
+  <script defer>
+
+    // document.querySelector(".chat_container").style.height = screen.height + "px"
+    // var xhttp = new XMLHttpRequest();
+    
+    // function sendMsg() {
+
+    //   let msg = document.querySelector("input").value;
+    //   document.querySelector("input").value = ""
+
+    //   xhttp.onreadystatechange = function () {
+    //       if (this.readyState == 4 && this.status == 200) {
+    //         console.log(this.responseText);
+    //       }
+         
+    //     };
+
+    //     xhttp.open("POST","MessageResponse", true);
+    //     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    //     // xhttp.setRequestHeader("Query", 'MessageResponse');
+    //     xhttp.send(msg);
+
+    // }
+   
+
+    let MessageContainer = []
+
+    // setInterval(() => {
+
+    //     xhttp.onreadystatechange = function () {
+    //       if (this.readyState == 4 && this.status == 200) {
+    //         if(this.response){MessageContainer.push(this.responseText)}
+               
+    //         console.log(this.responseText);
+
+    //       }
+         
+    //     };
+
+    //     let ClientAvaialbleMessage =  MessageContainer.length
+
+    //     xhttp.open("GET","MessageQuery", true);
+    //     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    //     // xhttp.setRequestHeader("Query", 'MessageQuery');
+    //     xhttp.setRequestHeader("Client-Avaialble-Message", ClientAvaialbleMessage);
+    //     xhttp.send();
+
+       
+    
+    // }, 1000);
+    // setInterval(() => {
+      
+    //   var xhr = new XMLHttpRequest();
+
+    //   xhr.onreadystatechange = function () {
+    //     if (this.readyState == 4 && this.status == 200) {
+    //       console.log(this.responseText);
+    //     }
+    //   };
+
+
+    //   xhr.open("GET", "MessageRequest", true);
+    //   xhr.send();
+
+
+    // }, 1000);
+
+
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+let msg;
+
+
+       
+        
+/*setInterval(() => {
+    fetch("http://localhost:8080/",{
+        method: "POST",
+        body: 'MessageEnquiry 2',
+    })
+ },500)*/

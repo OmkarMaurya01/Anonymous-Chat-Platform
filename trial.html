@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #1a1a1a;
+        /* background-image: url('hacker.jpg'); */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        overflow: hidden;
+        
+      }
+      .container {
+        width: 40vw;
+        height: 50vh;
+        margin: 50vh 0;
+        transform: translateY(-50%);
+        
+
+       
+        border-radius: 8px;
+        background-color: #333;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      .text{
+        font-size: 2em;
+        height: 20%;
+        /* border: red solid 2px ; */
+        padding: .5em .5em;
+        font-family:sans-serif;
+        text-transform: capitalize;
+        color:  #bcbaba;
+        /* font-style: italic; */
+      }
+
+      .sub-container{
+        /* border: rgb(60, 60, 60) solid 3px; */
+        border-top: rgb(60, 60, 60) solid 3px;
+        height: 80%;
+        position: relative;
+      }
+
+      .sub-container h2{
+
+        
+        /* border: 2px red solid ; */
+        width: 100%;
+        margin: 9%  50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 1.7em;
+        font-weight: 100;
+        font-family:'roboto';
+        color:  #bcbaba;
+
+
+      }
+      .sub-container input{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 60%;
+        height: 13%;
+        border-radius: 1em;
+        /* border: rgb(43, 42, 42) solid 1px; */
+        padding: 0 1em;
+        outline: none;
+        font-size: 1.1em;
+
+      }
+
+      p{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.2em;
+        font-family: 'roboto';
+        text-transform: capitalize;
+        color: rgb(229, 56, 56);
+      }
+
+      h5{
+        color: #989898;
+        position: absolute;
+        top: 98%;
+        left: 1%;
+        font-size: 1em;
+        transform: translateY(-100%);
+        text-transform: capitalize;
+        font-family:'roboto';
+        font-weight: 100;
+
+
+
+      }
+
+      button{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 15%;
+        height: 12%;
+        cursor: pointer;
+        margin: 1em;
+        border-radius: 1em;
+        
+        /* color: rgb(153, 153, 153); */
+        background-color: rgb(218, 215, 215);
+        /* transition: .5s; */
+
+      }
+      button:hover{
+        /* color: rgb(153, 6, 6); */
+        background-color: white;
+      }
+
+      /* button span{
+        color: #1a1a1a;
+        font-size: 1em;
+        font-family: 'roboto';
+      }
+      */
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="text">DarkRoom</div>
+      
+        <div class="form-group sub-container">
+
+          <h2>Authentication Key Required</h2>
+          <input type="password" id="password" name="password" placeholder="Enter your Key">
+          <p></p>
+          <h5>Note: Ask your key to server admin</h5>
+          <!-- <legend>passward</legend> -->
+          <button><span>Check</span></button>
+        </div> 
+
+        
+      
+    </div>
+  </body>
+</html>

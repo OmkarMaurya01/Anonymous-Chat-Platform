@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat Room</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            /* border: red solid 2px; */
+
+        }
+
+        .nav {
+            width: 100%;
+            height: 10%;
+            background-color: #252525;
+            position: relative;
+
+        }
+
+        .nav h1 {
+            color: rgb(211, 211, 211);
+            position: absolute;
+            top: 50%;
+            left: 2%;
+            transform: translateY(-50%);
+            font-family: 'roboto';
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            height: 90%;
+        }
+
+        .records {
+            width: 40%;
+            height: 100%;
+            /* border: green solid 2px; */
+        }
+
+        .nuker {
+            width: 100%;
+            height: 60%;
+            overflow: scroll;
+            overflow-x: hidden;
+            background-color: rgb(40, 40, 40);
+            position: relative;
+        }
+
+
+        .nuker::-webkit-scrollbar {
+            width: .8em;
+            background-color: rgb(52, 52, 52);
+        }
+
+        .nuker::-webkit-scrollbar-thumb {
+            background-color: rgb(194, 194, 194, 0.3);
+            border-radius: 1em;
+        }
+
+        .name-plate {
+            position: sticky;
+            width: 100%;
+            height: 2em;
+            /* border: red solid 2px ; */
+            top: 0;
+            left: 0;
+            background-color: rgb(71, 71, 71);
+            backdrop-filter: blur(150px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .name-plate span {
+            color: rgb(211, 211, 211);
+            font-family: 'roboto';
+            font-size: 1em;
+
+        }
+
+
+        .nukes {
+            width: 100%;
+            height: 20%;
+            /* border: red solid 2px; */
+            border-bottom: rgb(194, 194, 194, 0.3) solid 1px;
+            background-color: rgb(52, 52, 52);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nukes .dp {
+            width: 10%;
+            height: 90%;
+            border-radius: 1em;
+            /* border: red solid 2px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .dp img {
+            width: 80%;
+            height: 80%;
+            border-radius: 10em;
+        }
+
+        .nukes .clientname {
+            width: 90%;
+            height: 90%;
+            /* border: green solid 2px; */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 2%;
+            color: rgb(211, 211, 211);
+            font-size: 1.2em;
+            font-family: 'roboto';
+
+
+        }
+
+        .detail {
+            width: 100%;
+            height: 40%;
+            /* border: blue solid 2px; */
+            display: flex;
+        }
+
+        .server-detail {
+            width: 40%;
+            height: 100%;
+            /* border: red solid 2px ; */
+            border-right: rgba(161, 161, 161, 0.3) solid 1px;
+            background-color: rgb(40, 40, 40);
+
+        }
+
+        .server-detail .detailer {
+            width: 100%;
+            height: 10%;
+            border: rgb(163, 163, 163) solid 1px;
+            /* color: rgb(193, 193, 193); */
+            color: rgb(203, 203, 203);
+            font-size: 1em;
+            font-family: 'roboto';
+            padding: 1em .5em;
+            white-space: nowrap;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+
+        .resquest-response {
+            width: 60%;
+            height: 100%;
+            /* border: green solid 2px ; */
+            /* border-left: rgb(82, 81, 81 ,0.3) solid 1px ; */
+            border-right: rgba(161, 161, 161, 0.3) solid 1px;
+            background-color: rgb(40, 40, 40);
+            overflow-x: hidden;
+
+        }
+
+        .resquest-response::-webkit-scrollbar {
+            width: .8em;
+            background-color: rgb(52, 52, 52);
+        }
+
+        .resquest-response::-webkit-scrollbar-thumb {
+            background-color: rgb(194, 194, 194, 0.3);
+            border-radius: 1em;
+
+        }
+
+        .requests {
+            width: 100%;
+            height: 10%;
+            border-bottom: rgb(194, 194, 194, 0.3) solid 1px;
+            background-color: rgb(52, 52, 52);
+            color: white;
+            font-size: .8em;
+            font-family: 'roboto';
+            white-space: nowrap;
+            padding-left: .8em;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+
+        }
+
+
+
+        .chats {
+            width: 60%;
+            height: 100%;
+            background-color: #252525;
+        }
+
+        .chat-section {
+            width: 100%;
+            height: 90%;
+            /* overflow: scroll; */
+            overflow-x: hidden;
+            /* position: relative; */
+
+            /* border: red solid 2px; */
+        }
+
+        .chat-section::-webkit-scrollbar {
+            width: .8em;
+            background-color: rgb(52, 52, 52);
+        }
+
+        .chat-section::-webkit-scrollbar-thumb {
+            background-color: rgb(194, 194, 194, 0.3);
+            border-radius: 1em;
+
+        }
+
+        .chat-section .chat-container {
+            width: 100%;
+            /* min-height: 5%;   */
+            /* height: ; */
+            /* height: auto; */
+            border: red solid 2px;
+            position: relative;
+            /* position: absolute; */
+            /* display: inline-block; */
+            margin-top: .5em;
+
+        }
+
+        .left-chat {
+            width: 50%;
+            /* height: 100%; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 2px rgb(0, 255, 85) solid;
+        }
+
+        .right-chat {
+            width: 50%;
+            /* height: 100%; */
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 2px red solid;
+
+        }
+
+        .chat-box {
+            width: 100%;
+
+            display: inline-block;
+            border: blue solid 2px;
+        }
+
+
+        /* ------------------------------------------ */
+
+        .trial-chat-container {
+            width: 100%;
+            /* border: red solid 2px; */
+            margin: .5em 0;
+            display: flex;
+        }
+
+        .trial-left-chat {
+            width: 50%;
+            /* border: green solid 2px; */
+        }
+
+        .trial-right-chat {
+            width: 50%;
+            /* border: blue solid 2px; */
+            margin-left: 50%;
+            display: flex;
+            justify-content: end;
+        }
+
+        .trial-chat-box fieldset {
+
+            max-width: max-content;
+            /* border: yellow solid 2px; */
+            margin: 0 .7em;
+            padding: .5em 1em;
+            border-radius: .8em;
+            background-color: rgb(74, 74, 74);
+            color: white;
+            font-size: 1em;
+            font-family: 'roboto';
+            position: relative;
+            /* text-transform: capitalize; */
+        }
+
+        .trial-chat-box legend {
+            color: rgb(195, 195, 195);
+            font-size: .8em;
+            text-transform: capitalize;
+        }
+
+        .trial-chat-box div {
+            width: 100%;
+        }
+
+
+
+        /* ------------------------------------------ */
+
+        .sender {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* border: green solid 2px; */
+        }
+
+        .sender input {
+            width: 90%;
+            height: 70%;
+            border-radius: 2em;
+            padding: 1em;
+            font-size: 1em;
+            outline: none;
+            border: none;
+            font-family: 'roboto';
+            /* border: red solid 2px ; */
+        }
+
+        .sender button {
+            width: 7%;
+            height: 65%;
+            border-radius: 1em;
+            cursor: pointer;
+        }
+
+        .sender button:hover {
+            background-color: white;
+
+        }
+
+
+        @media only screen and (max-width: 600px){
+
+            .nav{
+                background-color: red;
+            }
+   
+            .content{
+
+                /* display: block; */
+                position: relative;
+                overflow: hidden;
+
+            }
+
+            .records{
+                position: absolute;
+                height: 50vh;
+                width: 100%;
+                left: 0;
+                top: 50%;
+                display: flex;
+
+            }
+
+            .nuker{
+                height: 50vh;
+                width: 60%;
+            }
+
+            .detail{
+                height: 100%;
+                width: 40%;
+                
+            }
+
+            .chats{
+                width: 100%;
+                height: 50%;
+                
+
+            }
+
+        }
+
+            
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="nav">
+            <h1>DarkRoom</h1>
+        </div>
+        <div class="content">
+            <div class="records">
+                <div class="nuker">
+                    <div class="name-plate"><span>Nukes</span></div>
+                   
+
+                </div>
+                <div class="detail">
+                    <div class="server-detail">
+                        <div class="name-plate"><span>Network Detail</span></div>
+                        <div class="host detailer"></div>
+                        <div class="port detailer"></div>
+                        <div class="Forwarded detailer"></div>
+                        <div class="protocol detailer"></div>
+                        <div class="key detailer"></div>
+                        <div class="noofclient detailer"></div>
+
+                    </div>
+                    <div class="resquest-response">
+                        <div class="name-plate"><span>Request</span></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="chats">
+                <div class="chat-section">
+                    <div class="name-plate"><span>Chats</span></div>
+
+
+
+                    <!-- <div class="trial-chat-container"> -->
+                    <!-- <div class="trial-left-chat">
+                            <div class="trial-chat-box">
+                                <fieldset>
+                                    <legend>linux motorola fusion i9</legend>
+                                    <div>hii hello linux motorola fusion i9linux motorola fusion i9linux motorola fusion i9linux motorola fusion i9</div>
+                                </fieldset>
+                                
+                            </div>
+                        </div> -->
+                    <!-- <div class="trial-right-chat">
+                            <div class="trial-chat-box">
+                                <p>
+                                    hello fjdbcf vbfhdc 
+                                </p>
+                            </div>
+                        </div> -->
+                    <!-- </div>
+                    <div class="trial-chat-container"> -->
+                    <!-- <div class="trial-left-chat">
+                            <div class="trial-chat-box">
+                                <fieldset>
+                                    <legend>linux motorola fusion i9</legend>
+                                    hii hello linux motorola fusion i9linux motorola fusion i9linux motorola fusion i9linux motorola fusion i9
+                                </fieldset>
+                                
+                            </div>
+                        </div> -->
+                    <!-- <div class="trial-right-chat">
+                            <div class="trial-chat-box">
+                                <fieldset>
+                                    <legend>linux motorola fusion i9</legend>
+                                    hii hello linux motorola fusion i9linux motorola fusion i9linux motorola fusion i9linux motorola fusion i9
+                                </fieldset>
+                                
+                            </div>
+                        </div> -->
+                    <!-- </div> -->
+
+
+
+
+
+                </div>
+                <div class="sender">
+                    <input type="text" id="message" placeholder="Type here">
+                    <button onclick='sendMyMsg()'>Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script defer>
+
+        const ngrokLink = "replace_Link_Here"
+        var AuthorizedUser = []
+        //  working with Server detail 
+
+        let host = 'replace_Host_here';
+        let port = '8080'
+        let Forwarded = ngrokLink
+        let protocol = 'HTTPS'
+        let key = 'replace_Key_here'
+
+        document.querySelector(".host").innerHTML = 'Host' + " : " + host;
+        document.querySelector(".port").innerHTML = 'Port' + " : " + port;
+        document.querySelector(".Forwarded").innerHTML = 'Forwarded' + " : " + Forwarded;
+        document.querySelector(".protocol").innerHTML = 'Protocol' + " : " + protocol;
+        document.querySelector(".key").innerHTML = 'Key' + " : " + key;
+        document.querySelector(".noofclient").innerHTML = 'Client ' + " : " + '0';
+
+        //  working with Server detail Complete
+
+
+        var UserDict = {}
+        var messageContainer = []
+        var outData = ""
+        function sendMyMsg() {
+
+            let msg = document.querySelector("#message").value
+            document.querySelector("input").value = ""
+
+
+            fetch("replace_Link_Here", {
+                method: "POST",
+                body: `POST Message => @layer ${msg} @layer`,
+            })
+        }
+
+
+        var rr = document.querySelector('.resquest-response')
+        const requestMessage = async () => {
+            console.log(`Length:  ${AuthorizedUser.length}`);
+            const response = await fetch('replace_Link_Here', { method: "POST", headers: { 'clientNumber': AuthorizedUser.length }, body: `MessageEnquiry ${0}`, })
+            const data = await response.json();
+
+            // data.split('[[[').split("]]]")
+            let clientNo = response.headers.get('client')
+            document.querySelector(".noofclient").innerHTML = 'Client ' + " : " + clientNo;
+
+
+
+            if (data) {
+
+                let raw = data.split("[[[")
+                let message = raw[0]
+                let user = raw[1].split("]]]")[0]
+                let users = user.split(",,,")
+                let nuker = document.querySelector(".nuker")
+                let actual = nuker.children.length - 1 // actual like 3,4
+                let NeedUser = users.length - actual
+                users = users.reverse()
+                let members = users.slice(0, NeedUser);
+                members.forEach(useragent => {
+
+                    let pre = useragent.indexOf("(")
+                    let pos = useragent.indexOf(")", pre + 1)
+                    let shortName = useragent.slice(pre + 1, pos)
+                    UserDict[useragent] = shortName
+
+                    let nukes = document.createElement("div")
+                    nukes.className = 'nukes'
+
+                    let dp = document.createElement("div")
+                    dp.className = 'dp'
+                    let dpImg = document.createElement("img")
+                    dpImg.src = 'man.png'
+                    dp.appendChild(dpImg)
+
+                    let clientname = document.createElement("div")
+                    clientname.className = 'clientname'
+                    clientname.innerHTML = shortName
+
+                    nukes.appendChild(dp)
+                    nukes.appendChild(clientname)
+
+                    nuker.appendChild(nukes)
+
+                });
+                // console.log(UserDict);
+
+
+
+
+                let request = document.createElement('div')
+                request.className = 'requests'
+                console.log(response.headers);
+                request.innerHTML = `RESPONSE:Post ID :${response.headers.get('ngrok-trace-id')}`
+                rr.append(request)
+
+                // Message Section
+
+                let chatContainer = document.querySelector(".chat-section")
+                let childs = chatContainer.children
+                let noofchild = childs.length - 1
+
+                let meassages = message.split(",,,")
+                let filterMsg = meassages.slice(0, meassages.length - 1);
+                // console.log(filterMsg);
+                let needMsg = filterMsg.length - noofchild
+                // console.log(needMsg);
+                let netMsglst = filterMsg.reverse().slice(0, needMsg)
+                // console.log(netMsglst);
+                if (netMsglst) {
+                    netMsglst.forEach((record) => {
+                        if (record) {
+                            let recorde = record.split("-->")
+                            let userAgent = recorde[0].trim()
+                            let msg = recorde[1]
+
+                            let deci = 'trial-left-chat'
+                            if (userAgent == 'You') { deci = 'trial-right-chat' }
+                            let trialChatContainer = document.createElement("div")
+                            trialChatContainer.className = 'trial-chat-container'
+
+                            let trialLeftChat = document.createElement('div')
+                            trialLeftChat.className = deci
+
+                            let trialChatBox = document.createElement("div")
+                            trialChatBox.className = 'trial-chat-box'
+
+                            let fieldset = document.createElement("fieldset")
+                            let legend = document.createElement("legend")
+                            legend.innerHTML = userAgent
+                            let divText = document.createElement("div")
+                            divText.innerHTML = msg
+
+
+                            fieldset.appendChild(legend)
+                            fieldset.appendChild(divText)
+
+                            console.log(fieldset);
+                            trialChatBox.appendChild(fieldset)
+                            trialLeftChat.appendChild(trialChatBox)
+                            trialChatContainer.appendChild(trialLeftChat)
+
+                            chatContainer.appendChild(trialChatContainer)
+
+                        }
+                    })
+                }
+
+                // Message Section Complete
+
+
+                // console.log(`Message -->${message}`);
+
+
+            }
+        }
+
+
+
+        setInterval(() => {
+            let request = document.createElement('div')
+            request.className = 'requests'
+            request.innerHTML = `REQ:Post    ADD:${ngrokLink}`
+            rr.append(request)
+
+            requestMessage();
+        }, 1000)
+
+    </script>
+</body>
+
+</html>

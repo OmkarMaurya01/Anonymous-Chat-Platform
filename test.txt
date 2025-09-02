@@ -1,0 +1,1197 @@
+ 
+	Free URL Shortener, Branded URLs, Bio Link, Link Shortener, URL Shortener API | Lnkiy.com
+
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-157819339-1');
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+	 
+	 
+	 
+	 .copyBtn{
+			 cursor: pointer;		
+			 	}
+	 	.btnUrlSort{
+	 		background-color: #1089ff;
+	 		border: 0px solid #1089ff;
+			font-size: 1.4rem;
+			line-height: 1.5;
+			color: white;
+			border-radius: 0px 8px 8px 0px;
+			cursor: pointer;
+	 	}
+	 	.textUrlLong{
+			    width: 100% !important;
+			    height: 60px;
+			    background: #FFFFFF;
+			    border: 1px solid #D3D4D7;
+			    border-radius: 8px 8px 8px 8px;
+			    vertical-align: baseline; 
+			    margin-bottom: 0;
+			    float: left;
+			    font-size: 19px;
+			    color: #36383B;
+			    padding: 0 20px;
+	 		}
+	 		.textCustomUrl{
+			    width: 100% !important;
+			    height: 60px;
+			    background: #FFFFFF;
+			    border: 1px solid #D3D4D7;
+			    border-radius: 0px 0px 0px 0px;
+			    display: inline-block;
+			    margin-bottom: 0;
+			    float: left;
+			    font-size: 19px !important;
+			    color: #36383B;
+			    padding: 0 20px; 
+	 		}
+	 		
+	 		.textCustom {
+				    width: 100% !important;
+				    height: 60px;
+				    background: #1a89ff40;
+				    border: 1px solid #1a89ff08;
+				    border-radius: 8px 0px 0px 8px;
+				    display: inline-block;
+				    margin-bottom: 0;
+				    float: left;
+				    font-size: 23px;
+				    color: #1a89ff;
+				    padding: 12px;
+				    white-space: nowrap;
+	    overflow: hidden; 
+	    text-overflow: ellipsis;
+	    max-width: 203px;
+				}
+	 		
+			 	.textUrlshot{
+				    padding: 16px 20px;
+				    justify-content: space-between;
+				    align-items: center;
+				    position: relative;
+				    font-size: 18px;
+				}
+	 	
+			 	.w3ls_banner_txt{
+			 		padding-left: 0%;
+			 		padding-top: 1vw;
+			 	}
+			 	@media only screen and (max-width: 700px) {
+			 	#ardyacsl{
+					font-size: 0.8rem;
+					color: #ea1c1c;
+					text-align: center;
+					display: none;
+					width: 130%;
+					}
+			 	#pageMessages {
+					    position: fixed;
+					    top: 95px;
+					    right: 8px;
+					    width: 290px !important;
+					    z-index: 1;
+					}
+			 	
+			 	 #shorten_actions .anon_history li span {
+					    white-space: nowrap;
+					    overflow: hidden; 
+					    text-overflow: ellipsis;
+					    max-width: 203px;
+					}
+			 	#termacsl {
+				    width: 133% !important;
+					font-size: 0.7rem !important;
+				    color: #1a89ff;
+					margin-left: 0px !important;
+				}
+			 	#shorten_actions .anon_history li {
+				    padding: 7px 14px; 
+				    justify-content: space-between;
+				    align-items: center;
+				    position: relative;
+				    font-size: 18px;
+				    width: 100% !important;
+				} 
+			 	.short_new_link{
+					width: 133% !important;
+				} 
+			 	.qrIcon{
+			 		font-size: 35px !important;
+			 		cursor: pointer;
+			 		
+ 			 	}
+ 			 	  
+			 	#shorten_actions_option{
+			 		padding: 5px 0px 0px 50% !important;
+			 		
+			 	}
+			 	h1.w3ls_pvt-title {
+				    font-size: 2.1rem;
+				    font-weight: 600;
+				    color: #202428;
+				}
+							 	
+			 	.textCustom {
+				    width: 48% !important;
+				    height: 38px !important;
+				    background: #c5e1fe;
+				    border: 1px solid #c5e1fe;
+				    border-radius: 8px 0px 0px 8px !important;
+				    display: -webkit-inline-flex;
+				    margin-bottom: -6px;
+				    font-size: 23px !important;
+				    color: #1a89ff;
+				    padding: 2px 10px !important;
+				    white-space: nowrap;
+	    overflow: hidden; 
+	    text-overflow: ellipsis;
+	    max-width: 203px;
+				}
+			 	
+			 	 .textCustomUrl {
+					    width: 95% !important;
+					    height: 38px !important;
+					    background: #FFFFFF;
+					    border: 1px solid #D3D4D7;
+					    border-radius: 0px 8px 8px 0px !important;
+					    display: -moz-box;
+					    margin-bottom: 0;
+					    float: left;
+					    font-size: 16px !important;
+					    color: #36383B;
+					    padding: 0px 8px;
+					    margin-left: 99px !important;
+					    margin-top: -32px !important;
+					    margin-bottom: 10px !important;
+					}
+					#ardyacsl{
+						font-size: 0.8rem !important;
+					}
+					
+			 	.image1 {
+    				max-width: 40% !important;
+    				}
+			 	.long-link{
+			 		display: none !important;
+			 	}
+			 	.search-bottom-wthree{
+			 		display: block !important;
+			 	}
+			 	.textUrlLong { 
+			 		width: 133% !important;
+			 		height: 45px; 
+			 		background: #FFFFFF; 
+			 		border: 1px solid #D3D4D7; 
+			 		border-radius: 8px 8px 8px 8px; 
+			 		margin-bottom: 6px; 
+			 		float: left; 
+			 		font-size: 16px !important; 
+			 		color: #36383B;
+			 		padding: 10px;
+			 		}
+			 		
+			 		 .btnUrlSort {
+			 		 	 background-color: #1089ff; 
+			 		 	 border: 0px solid #1089ff; 
+			 		 	 font-size: 1.3rem; 
+			 		 	 line-height: 1.5; 
+			 		 	 color: white; 
+			 		 	 border-radius: 8px 8px 8px 8px; 
+			 		 	 cursor: pointer; 
+			 		 	 margin: 10px 45px !important;  
+			 		 }
+			 		 
+			 	.shape-wthree{
+			 		display: none;
+			 	}
+			 	
+			 	.w3ls_banner_txt{
+			 		padding-left: 0%;
+			 	}
+			 	
+	 	.copyBtn{
+    		font-size: 12px !important;
+   			 position: relative;
+    		padding-left: 12px !important;
+    		padding-right: 12px !important;
+}
+#shorten_actions{
+	width: 132% !important; 
+}
+
+	 	}
+#shorten_actions .anon_history li {
+    border-radius: 8px 8px 8px 8px;
+    width: 100%;
+}
+
+#shorten_actions .anon_history, #shorten_actions .error-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    background-color: #d5d5d5;
+    border-radius: 8px 8px 8px 8px;
+}
+
+li.link {
+    display: flex;
+}
+
+#shorten_actions .anon_history li {
+    padding: 8px 10px; 
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+}
+.text-content li {
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+#shorten_actions .anon_history li span {
+    display: inline-block;
+    vertical-align: middle;
+     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 470px;
+}
+ 
+#shorten_actions .anon_history li button, #shorten_actions .anon_history li .button {
+    font-size: 16px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#shorten_actions .anon_history li button, #shorten_actions .anon_history li .button, #shorten_actions .anon_history li h5 {
+    margin: 0;
+}
+.button-light, .button-secondary {
+    background: #EDF2FE;
+    color: #2A5BD7;
+}
+.button, .button-primary {
+    background: #1089ff;
+    border-radius: 8px;
+    font-size: inherit;
+    color: white;
+    transition: background 100ms linear;
+    text-decoration: none;
+    line-height: normal;
+    outline: none !important;
+    padding: .6em 1em;
+        padding-right: 1em;
+        padding-left: 1em;
+}
+.longhomelink{
+	width: 80%;
+	text-align: center;
+	padding: 10px;
+	margin-left: -6px !important; 
+}
+
+	 	
+.image1 {
+    max-width: 45%;
+    height: auto;
+}
+.customText { position: absolute; display: block; left: 5px; top: 10px; z-index: 9; }
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#shorten_actions_option{
+		padding: 5px 0px 0px 50%;
+	}
+	.fa-qrcode{  
+		font-size: 40px; 
+		color: #1089ff;
+		cursor: pointer; 
+	}
+	.fa-key{
+		font-size: 35px;  
+		color: #1089ff;
+		cursor: pointer; 
+		margin-left: 10px;
+	}  
+	 
+	.fa-share-alt{  
+		font-size: 40px;  
+		color: #1089ff;
+		cursor: pointer; 
+		margin-left: 10px;
+	}   
+	.modal-body {
+		    position: relative;
+		    -webkit-box-flex: 1;
+		    -ms-flex: 1 1 auto;
+		    flex: 1 1 auto; 
+		    padding: 0.2rem 1rem 0.2rem 1rem !important;
+		}
+
+#pageMessages {
+			  position: fixed;
+			  top: 95px;
+			  right: 15px;
+			  width: 30%;
+			  z-index: 1;
+			}
+
+.alert {
+  position: relative;
+}
+
+.alert .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1em;
+}
+
+.alert .fa {
+  margin-right:.3em;
+}
+
+@media only screen and (min-width: 1200px) {
+#termacsl{
+	width: 85%;
+	font-size: 0.8rem;
+	color: #1089ff; 
+	margin-left: 0px;
+}
+#ardyacsl{
+		font-size: 1.0rem;
+		color: #ea1c1c;
+		text-align: center;
+		display: none;
+		width: 80%;
+		}
+
+.cffirst2{
+	padding-top: 14px; 
+}
+
+	.clinkbox{
+		padding-left: 12%;
+	}
+	
+	.slinkb{
+		white-space: nowrap;
+	    overflow: hidden; 
+	    text-overflow: ellipsis;
+	    max-width: 203px;
+	}
+}
+
+
+	 
+
+
+
+	
+	 
+		
+		   
+
+
+		 
+			
+			
+				
+					
+					 
+						 
+					
+					  
+					
+					
+						
+							Menu
+							
+							 
+							
+								Custom URL
+								Bio Link  New
+								
+								
+									
+									More Info 
+									
+									More Info 
+									
+									
+										About Us
+								Services
+										 
+								
+								
+								
+								
+								
+								
+								
+									
+									Tools 
+									
+									Tools 
+									
+									 
+										UTM Builder
+										Chrome Extension
+										 
+								
+								Spam Report
+								
+								
+								API
+								
+								
+								
+							 	Dashboard
+							 	
+							 	Get Free Domain
+							
+						
+					
+					
+					
+						
+						
+						
+						
+						 
+						
+					
+				
+			
+		
+		
+		
+		
+		
+		
+
+		
+		
+			
+					
+						Create Custom URL 
+					 	Create custom url with Lnkiy and make it easily shareable and more valuable
+					 
+					
+					
+						
+								
+						 
+						
+								   
+								booklet.lnkiy.in  
+								
+								  
+								Shorten
+						
+						
+							 	
+						
+						
+						
+							  
+							    
+							      http://8153-150-129-28-203.ngrok-free.app
+							      http://booklet.lnkiy.in/shivayom5
+							      
+							        Copy
+							      
+							    
+							   
+						
+						
+						
+							  
+							      
+							      	
+							      	
+							         
+							     
+						
+					
+					
+				
+			
+			
+		
+		
+	
+	
+
+	
+	
+		
+			Benefits of custom URL
+				Custom url shortener is a powerful Shortening tool. It not just short the URL but it's a medium between your user and their destination.
+			
+				
+					
+						
+							
+								
+							
+							Business Growth
+							It helps to get the trust of the user and hence bounce rate decreases.
+						
+					
+				
+				
+					
+						
+							
+								
+							
+							Financial Planning
+							If we short the URL and share it via message, then the message cost will be reduced.
+						
+					
+				
+				
+					
+						
+							
+								
+							
+							Marketing Idea
+							It can be used in business e-mails, messages, ads, or for any marketing purpose.
+						
+					
+				
+			
+		
+	
+	
+	
+	
+	
+		
+			
+				
+				Why We Need of Branded URL
+					Branded URL receive up to 39% more click-through than generic short links. This is because people feel better about clicking on a link which features a brand name. You can gain this trust by customizing your short links to indicate where your link will lead.
+					When sharing Branded URL online, keep in mind the length limitations of social media platforms. These two sites are the most restrictive social media sites. 
+						
+						 Twitter truncates links which go above 32 characters.
+						 LinkedIn replaces URLs which exceed 26 characters with a lnkd.in link.
+					
+					Read More 
+				
+				
+					
+				
+			
+		
+	
+	
+
+	
+	 
+		
+		Some More Benefits of Branded URLs
+		
+			
+				
+					
+						Sharing a custom URL online
+						 When choosing a keyword for custom URL which will be shared, you can use this as an opportunity to communicate information about the page the link leads to.
+					
+				
+				
+						Show your brand name
+						Custom URL can also be printed on flyers, business cards, posters, billboards or t-shirts and these URLs may leave impressions on users mind.
+				
+				
+						Best tool for marketing
+						Custom URL are great for reading aloud during keynote presentations, radio appearances, podcasts, live streams and networking events.
+				
+			
+		
+	
+	
+	
+
+
+	
+	
+		
+			
+				
+				
+					
+						Grow business with branded URL
+						Custom URL is useful in many ways:
+						
+						1. Custom URL for media appearances and events
+							When used correctly, custom URL can benefit your business well beyond boosting visibility, trust and awareness. Take advantage of the ability to edit and control your short links by enhancing them for each platform or place you use them. 
+							
+						2. Sharing Custom URL 
+								When choosing a keyword for custom URL which will be shared online or offline, you can use this opportunity to communicate information about the page the link leads to. This will build trust, encourage click-throughs and reduce your sites bounce rate as prospects will know exactly what to expect when they arrive on your site.
+					
+				
+				
+					
+				
+			
+			
+			
+			
+				
+					
+								Do not forget about SEO
+								You should also keep in mind the target keyword of the webpage you are sharing. Featuring this keyword in your custom URL can help optimize it for search engines.
+
+								For example : http://lnkiy.in/yourKeyword
+					
+				
+			
+			
+			
+		
+	
+	
+	
+   
+     
+      
+      
+        Password to access short link
+        
+          × 
+        
+      
+      
+         
+           
+            By adding a password, you can restrict the access of short link by the random users. 
+            
+           
+          
+          
+      
+       
+        Close
+        Set Password 
+      
+     
+  
+
+	
+
+
+
+	
+	
+
+		 
+			 
+			
+				
+					
+				
+				Stay Updated!
+				
+				Subscribe to our newsletter by just providing your email id and we will notify you whenever new things go live.
+				
+				
+				 
+					
+						
+						Subscribe
+					 
+				
+			
+			
+		
+	
+	
+	
+	
+		
+			
+				
+				
+					
+						
+							
+								
+							
+						
+						
+							
+								
+							
+						
+						
+							
+								
+							
+						
+						
+							
+								
+							
+						
+						
+							
+								
+							
+						
+					
+				
+				
+				
+				
+				 	
+				 	© 2019 - 2023 Lnkiy. All rights reserved.
+				 
+				 
+				
+				
+				  
+				 Terms of Services
+				    
+				Privacy Policy
+				
+				
+					
+						
+					
+				
+				
+			
+		
+	 
+	
+	
+		function newsletterSend(){
+			var email = $('#emailForNews').val();
+			if(email==''){
+				 $("#newsMessage").html("");
+				 $("#newsMessage").html("Please enter email id");
+				 $("#newsMessage").css('color','red');
+	   		 return false;
+			}
+			
+			var pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	        if (!pattern.test(email)) {
+	        	$("#newsMessage").html("");
+				 $("#newsMessage").html("Please enter valid email id");
+				 $("#newsMessage").css('color','red');
+	            return false;
+	        } 
+			
+			$("#newslettersubmit").attr("disabled", true);
+			
+			 $("#newsMessage").html("");
+			 $("#newsMessage").html("Please wait ... ");
+			 $("#newsMessage").css('color','red');
+				$.ajax({
+					type: 'POST',
+				    url: "addNewsletter",
+				    data: {"email":""+email},
+				    success: function (resp) {
+				    	if(resp=="success"){
+				    		$("#newsMessage").html("");
+				    		$('#emailForNews').val('');
+							 $("#newsMessage").html("<strong>Thanks for your subscription :- </strong>We will update you with the latest update through email.");
+							 $("#newsMessage").css('color','green');
+							
+							 $("#newslettersubmit").attr("disabled", false);
+				    	}else if(resp=="duplicate"){
+				    		$("#newsMessage").html("");
+				    		$('#emailForNews').val('');
+							 $("#newsMessage").html("<strong>You're already subscribed to Lnkiy.com</strong>");
+							 $("#newsMessage").css('color','red');
+							
+							 $("#newslettersubmit").attr("disabled", false);
+				    	}
+				    },
+				    error: function(e) {
+				    	$("#newsMessage").text("");
+			    		$('#emailForNews').val('');
+						 $("#newsMessage").html("<strong>Something went wrong.Please try again</strong>");
+						 $("#newsMessage").css('color','red');
+						 $("#newsMessage").fadeTo(5000, 800).slideUp(800, function(){
+			    			    $("#newsMessage").slideUp(800);
+			    			});
+						 $("#newslettersubmit").attr("disabled", false);
+				    }  
+				});
+		    return false;
+		}
+	
+	function createAlert(title, summary, details, severity, dismissible, autoDismiss, appendToId,timingset) {
+		  var iconMap = {
+		    info: "fa fa-info-circle",
+		    success: "fa fa-check-circle",
+		    warning: "fa fa-exclamation-triangle",
+		    danger: "fa ffa fa-exclamation-circle"
+		  };
+
+		  var iconAdded = false;
+
+		  var alertClasses = ["alert", "animated", "flipInX"];
+		  alertClasses.push("alert-" + severity.toLowerCase());
+
+		  if (dismissible) {
+		    alertClasses.push("alert-dismissible");
+		  }
+
+		  var msgIcon = $("<i />", {
+		    "class": iconMap[severity] // you need to quote "class" since it's a reserved keyword
+		  });
+
+		  var msg = $("<div />", {
+		    "class": alertClasses.join(" ") // you need to quote "class" since it's a reserved keyword
+		  });
+
+		  if (title) {
+		    var msgTitle = $("<h4 />", {
+		      html: title
+		    }).appendTo(msg);
+		    
+		    if(!iconAdded){
+		      msgTitle.prepend(msgIcon);
+		      iconAdded = true;
+		    }
+		  }
+
+		  if (summary) {
+		    var msgSummary = $("<strong />", {
+		      html: summary
+		    }).appendTo(msg);
+		    
+		    if(!iconAdded){
+		      msgSummary.prepend(msgIcon);
+		      iconAdded = true;
+		    }
+		  }
+
+		  if (details) {
+		    var msgDetails = $("<p />", {
+		      html: details
+		    }).appendTo(msg);
+		    
+		    if(!iconAdded){
+		      msgDetails.prepend(msgIcon);
+		      iconAdded = true;
+		    }
+		  }
+		  
+
+		  if (dismissible) {
+		    var msgClose = $("<span />", {
+		      "class": "close", // you need to quote "class" since it's a reserved keyword
+		      "data-dismiss": "alert",
+		      html: "<i class='fa fa-times-circle'></i>"
+		    }).appendTo(msg);
+		  }
+		  
+		  $('#' + appendToId).prepend(msg);
+		  
+		  if(autoDismiss){
+		    setTimeout(function(){
+		      msg.addClass("flipOutX");
+		      setTimeout(function(){
+		        msg.remove();
+		      },timingset);
+		    }, 2000);
+		  }
+		}
+				
+				
+	
+	
+	 
+	
+	
+	
+			function glink(){ 
+				$('.btnUrlSort').prop('disabled', true);
+				$("#ardyacsl").text("");
+				$(".copyBtn").text("Copy");
+				$(".copyBtn").css("background-color","#1089ff");
+				var linld=$('#longLink').val();
+				var slink=$('#customLink').val();
+				
+				if(linld==''){
+					$('#ardyacsl').css('display','inherit');
+					$('#ardyacsl').css('text-align','left');
+            		$("#ardyacsl").text("Please provide a long url");
+					$("#ardyacsl").css('color','red');
+					$('.btnUrlSort').prop('disabled', false);
+		   		 return false;
+				}
+				 var pattern = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/;
+			        if (!pattern.test(linld)) {
+			        	$('#ardyacsl').css('display','inherit');
+						$('#ardyacsl').css('text-align','left');
+	            		$("#ardyacsl").text("Please enter a valid url");
+	            		$("#ardyacsl").css('color','red');
+	            		$('.btnUrlSort').prop('disabled', false);
+			            return false;
+			        } 
+				if(slink==''){
+					$('#ardyacsl').css('display','inherit');
+					$('#ardyacsl').css('text-align','right');
+            		$("#ardyacsl").text("Please enter your custom characters");
+					 $("#ardyacsl").css('color','red');
+					 $('.btnUrlSort').prop('disabled', false);
+		   		 return false;
+				}
+				
+				if(slink.length < 6){ 
+					$('#ardyacsl').css('display','inherit');
+					$('#ardyacsl').css('text-align','right');
+            		$("#ardyacsl").text("Your custom short url should contain 6 or more characters");
+					 $("#ardyacsl").css('color','red');
+					 $('.btnUrlSort').prop('disabled', false);
+		   		 return false;
+				}
+		          
+		          
+         		   $.ajax({
+                        type: 'POST',
+                        url: "createCustomUrl",
+                        contentType: "application/x-www-form-urlencoded",
+                       
+                        data: {
+                            "link": "" + linld,
+                            "slink": "" + slink
+                         },
+                        success: function(resp) {
+                        	if(resp=="blockshortlink"){
+                        		$('#ardyacsl').css('display','inherit');
+                        		$("#ardyacsl").text("This link have already sorted by another URL shortener tool");
+                        		$('.btnUrlSort').prop('disabled', false);
+                        	}else if(resp=="blockpornlink"){
+                        		$('#ardyacsl').css('display','inherit');
+                        		$("#ardyacsl").text("This URL banned by Lnkiy");
+                        		$('.btnUrlSort').prop('disabled', false);
+                        	}else if(resp=="linkforword"){
+                        		$('#ardyacsl').css('display','inherit');
+                        		$("#ardyacsl").text("This link have forwarded on another link, Please enter destination link");
+                        		$('.btnUrlSort').prop('disabled', false);
+                        		$('#shorten_actions_option').css('display','none');
+                        	}else if(resp=="allreadyLnkiyLink"){
+                        		$('#ardyacsl').css('display','inherit');
+                        		$("#ardyacsl").text("This is already a Lnkiy URL");
+                        		$('.btnUrlSort').prop('disabled', false);
+                        		$('#shorten_actions_option').css('display','none');
+                        	}else if(resp=="used"){
+                        		$('#ardyacsl').css('display','inherit');
+                        		$('#ardyacsl').css('text-align','left');
+                        		$("#ardyacsl").text("This keyword is already in use");
+                        		$('.btnUrlSort').prop('disabled', false);
+                        		$('#shorten_actions_option').css('display','none');
+                        	}else if(resp=="specialchar"){
+                        		$('#ardyacsl').css('display','inherit');
+                        		$('#ardyacsl').css('text-align','right');
+                        		$("#ardyacsl").text("The Custom URL field may only contain alpha-numeric characters, underscores, and dashes");
+                        		$('.btnUrlSort').prop('disabled', false);
+                        		$('#shorten_actions_option').css('display','none');
+                        	}else{
+                        		$('.long-link').text(linld);
+                        		var shortSplit=resp.split("++");
+                        		$('.short-link').html('<a id="myInput" href='+shortSplit[0]+' target="_blank">'+shortSplit[0]+'</a>');
+                        		$('#shorten_actions').removeAttr('style');
+                        		$('#shorten_actions_option').removeAttr('style');
+                        		$('#qrvalueHold').val(shortSplit[0]);
+                        		$('#shortLinkIdValue').val(shortSplit[1]);
+                        		$('.btnUrlSort').prop('disabled', false);
+                        	}
+                        },
+                        error: function(e) {
+                        	$('#ardyacsl').css('display','inherit');
+                    		$("#ardyacsl").text("Something went wrong.Please try again");
+                    		$('.btnUrlSort').prop('disabled', false);
+                    		$('#shorten_actions_option').css('display','none');
+                        }
+                    });
+         	   
+			}
+			function myFunction() {
+				  var copyText = document.getElementById("myInput");
+				  document.addEventListener('copy', function(e) {
+					    e.clipboardData.setData('text/plain', copyText);
+					    e.preventDefault();
+					   }, true);
+				  document.execCommand("copy");
+				  $(".copyBtn").text("Copied!");
+				  $(".copyBtn").css("background-color","#1089ff");
+				}
+
+				function outFunc() {
+				  var tooltip = document.getElementById("myTooltip");
+				  tooltip.innerHTML = "Copy to clipboard";
+				}
+				
+				function qrCodeGen(){ 
+					var qrvalue=$('#qrvalueHold').val();
+					var win = window.open(qrvalue+"-qrcode", '_blank');
+					  win.focus(); 
+				}
+			 
+				function closePasswordPopup(){
+					$("#exampleModalPassword").modal("hide");
+					$("#linkPassword").val('');
+					$("#linkpasswordmessage").text("");
+				}
+				
+				function setLinkPasowrd(){
+					$('.btnpassset').prop('disabled', true);
+					$("#linkpasswordmessage").text("");
+					
+					var linkidvalue=$('#shortLinkIdValue').val();
+					var linkpassword=$('#linkPassword').val();
+					
+					if(linkpassword.length < 6){ 
+						$('#linkpasswordmessage').css('display','inherit');
+						$('#linkpasswordmessage').css('text-align','center');  
+		        		$("#linkpasswordmessage").text("Your password should contain 6 or more characters");
+						 $("#linkpasswordmessage").css('color','red');
+						 $('.btnpassset').prop('disabled', false);
+			   		 return false;
+					} 
+					
+		     		   $.ajax({
+		                    type: 'POST',
+		                    url: "setPasswordForLink",
+		                    contentType: "application/x-www-form-urlencoded",
+		                    data: {
+		                        "linkId": "" + linkidvalue,
+		                        "linkPassword": "" + linkpassword
+		                    },
+		                    success: function(resp) {
+		                    	if(resp=="success"){
+		                    		$("#linkpasswordmessage").text("");
+		                    		$("#exampleModalPassword").modal("hide");
+		                    		$("#linkPassword").val(''); 
+		                    		$('.btnpassset').prop('disabled', false);
+		                    		createAlert('','Success!','Password has been set successfully.','success',true,true,'pageMessages',1500); 
+		                    	}else if(resp="error"){ 
+		                    		$('#linkpasswordmessage').css('display','inherit');
+		                    		$("#linkpasswordmessage").text("");
+		                    		$("#linkpasswordmessage").text("Something went wrong.Please try again");
+		                    		$("#linkpasswordmessage").css('color','red');
+		                    		$('.btnpassset').prop('disabled', false);
+		                    	}
+		                    },
+		                    error: function(e) {
+		                    	$("#linkpasswordmessage").text("");
+		                    	$('#linkpasswordmessage').css('display','inherit');
+		                    	$('.btnpassset').prop('disabled', false);
+		                		$("#linkpasswordmessage").text("Something went wrong.Please try again");
+		                    }
+		                });
+		     	   
+				}	
+			    
+				
+		
+
+
+
